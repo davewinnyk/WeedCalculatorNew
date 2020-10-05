@@ -1,0 +1,25 @@
+/* font-family: 'Pacifico', cursive;
+font-family: 'Sansita Swashed', cursive; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-image: radial-gradient(circle, #3A8F36, #41DB39);
+}
+header {
+    font-family: 'Pacifico', cursive;
+    text-shadow: 1px 1px 3px #34258F;
+    color: black;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+.subtext{
+    font-family: 'Sansita Swashed', cursive;
+}
