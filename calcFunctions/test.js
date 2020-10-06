@@ -1,7 +1,7 @@
 exports.handler = function(event, context, callback) {
     const { weight } = JSON.parse(event.body)
 
-    if (weight == "Ounce")
+    if (weight === "Ounce")
     {
     callback(null, {
         statusCode: 200,
