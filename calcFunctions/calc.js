@@ -6,12 +6,80 @@ exports.handler = function(event, context, callback) {
     const quarterweight = 7.087375;
     const eighthweight = 3.5436875;
     const gramweight = 1.0;
-    var Weights = ['pound','quap','ounce','half', 'quarter', 'eighth', 'gram'];
+    const Weightlist = ['pound','quap','ounce','half', 'quarter', 'eighth', 'gram'];
+
+    let strain = Strain.input;
+    let weight = Weight.input;
+    let price = Price.input;    
+        
+    function determineGramPrice(weight){
+        
+        switch (weight) {
+            case 'pound':
+                let gramprice = price / poundweight;
+                break;
+            case 'quap':
+                let gramprice = price / quapweight;
+                break;
+            case 'ounce':
+                let gramprice = price / ounceweight;
+                break;
+            case 'half':
+                let gramprice = price / halfweight;
+                break;
+            case 'quarter':
+                let gramprice = price / quarterweight;
+                break;
+            case 'eighth':
+                let gramprice = price / eighthweight;
+                break;               
+            case 'gram':
+                let gramprice = price / gramweight;
+                break;
+            default:
+                let gramprice = 0;
+                break;
+        } 
+
+    }
+    /*
+    function getPrices(Strain):
+
+        
+        for (let i = 0; i<8; i += 1)
+                price = Strain.gramprice * poundweight
+                Strain.pricelist.append(price)
+                print(f'The price per {Weight} is {price}')
+            if Weight == 'quap':
+                price = Strain.gramprice * quapweight
+                Strain.pricelist.append(price)
+                print(f'The price per {Weight} is {price}')
+            if Weight == 'ounce':
+                price = Strain.gramprice * ounceweight
+                Strain.pricelist.append(price)
+                print(f'The price per {Weight} is {price}')
+            if Weight == 'half':
+                price = Strain.gramprice * halfweight
+                Strain.pricelist.append(price)
+                print(f'The price per {Weight} is {price}')
+            if Weight == 'quarter':
+                price = Strain.gramprice * quarterweight
+                Strain.pricelist.append(price)
+                print(f'The price per {Weight} is {price}')
+            if Weight == 'eighth':
+                price = Strain.gramprice * eighthweight
+                Strain.pricelist.append(price)
+                print(f'The price per {Weight} is {price}')
+            if Weight == 'gram':
+                price = Strain.gramprice * gramweight
+                Strain.pricelist.append(price)
+                print(f'The price per {Weight} is {price}')
+*/
     
 
     callback(null, {
     statusCode: 200,
-    body: JSON.stringify(${quapweight})
+    body: JSON.parse(gramprice, price, weight, strain)
     });
 }
 

@@ -7,6 +7,7 @@ font-family: 'Sansita Swashed', cursive; */
 }
 body {
     display: flex;
+    flex-direction: column;
     text-align: center;
     justify-content: center;
     background-image: radial-gradient(circle, #3A8F36, #41DB39);
