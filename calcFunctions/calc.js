@@ -10,6 +10,13 @@ exports.handler = function(event, context, callback) {
 
 
 /*
+
+event : where we can retrieve post data, headers
+context : information about the context in which the function was called, like certain user information
+callback : a function that we call to return a response to the user
+
+
+
 STUFF FROM DOCS https://docs.netlify.com/functions/build-with-javascript/#format
 {
     "path": "Path parameter",
