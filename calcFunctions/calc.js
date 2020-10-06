@@ -1,7 +1,17 @@
 exports.handler = function(event, context, callback) {
+    const poundweight = 453.592;
+    const quapweight = 113.398;
+    const ounceweight = 28.3495;
+    const halfweight = 14.17475;
+    const quarterweight = 7.087375;
+    const eighthweight = 3.5436875;
+    const gramweight = 1.0;
+    var Weights = ['pound','quap','ounce','half', 'quarter', 'eighth', 'gram'];
+    
+
     callback(null, {
     statusCode: 200,
-    body: "Hello, World"
+    body: JSON.stringify(${quapweight} ${Weights})
     });
 }
 
