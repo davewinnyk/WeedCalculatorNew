@@ -1,4 +1,5 @@
 exports.handler = function(event, context, callback) {
+    console.log("it's cool")
     const poundweight = 453.592;
     const quapweight = 113.398;
     const ounceweight = 28.3495;
@@ -7,38 +8,46 @@ exports.handler = function(event, context, callback) {
     const eighthweight = 3.5436875;
     const gramweight = 1.0;
     const Weightlist = ['pound','quap','ounce','half', 'quarter', 'eighth', 'gram'];
-
+    console.log("yeah")
     let strain = Strain.input;
     let weight = Weight.input;
     let price = Price.input;
     let gramprice;    
-        
+    console.log("still good")
     function determineGramPrice(weight){
         
         switch (weight) {
             case 'pound':
                   gramprice = price / poundweight;
+                  console.log(gramprice)
                 break;
             case 'quap':
                   gramprice = price / quapweight;
+                  console.log(gramprice)
                 break;
             case 'ounce':
                   gramprice = price / ounceweight;
+                  console.log(gramprice)
                 break;
             case 'half':
                   gramprice = price / halfweight;
+                  console.log(gramprice)
                 break;
             case 'quarter':
                   gramprice = price / quarterweight;
+                  console.log(gramprice)
                 break;
             case 'eighth':
                   gramprice = price / eighthweight;
+                  console.log(gramprice)
                 break;               
             case 'gram':
                   gramprice = price / gramweight;
+                  console.log(gramprice)
                 break;
             default:
                   gramprice = 0;
+                  console.log(gramprice)
                 break;
         } 
 
