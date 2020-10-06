@@ -15,7 +15,7 @@ exports.handler = function(event, context, callback) {
     let gramprice;    
     console.log("still good")
     function determineGramPrice(weight){
-        
+        console.log("function good")
         switch (weight) {
             case 'pound':
                   gramprice = price / poundweight;
@@ -50,7 +50,7 @@ exports.handler = function(event, context, callback) {
                   console.log(gramprice)
                 break;
         } 
-
+console.log("this is the end")
     }
     /*
     function getPrices(Strain):
