@@ -5,7 +5,7 @@ exports.handler = function(event, context, callback) {
     {
     callback(null, {
         statusCode: 200,
-        body: JSON.stringify({msg: '${weight} is 28grams, bro'}),
+        body: JSON.stringify({msg: 'An ${weight} is 28grams, bro'}),
         })
     }
     else 
