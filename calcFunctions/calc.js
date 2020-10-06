@@ -10,34 +10,35 @@ exports.handler = function(event, context, callback) {
 
     let strain = Strain.input;
     let weight = Weight.input;
-    let price = Price.input;    
+    let price = Price.input;
+    let gramprice;    
         
     function determineGramPrice(weight){
         
         switch (weight) {
             case 'pound':
-                let gramprice = price / poundweight;
+                  gramprice = price / poundweight;
                 break;
             case 'quap':
-                let gramprice = price / quapweight;
+                  gramprice = price / quapweight;
                 break;
             case 'ounce':
-                let gramprice = price / ounceweight;
+                  gramprice = price / ounceweight;
                 break;
             case 'half':
-                let gramprice = price / halfweight;
+                  gramprice = price / halfweight;
                 break;
             case 'quarter':
-                let gramprice = price / quarterweight;
+                  gramprice = price / quarterweight;
                 break;
             case 'eighth':
-                let gramprice = price / eighthweight;
+                  gramprice = price / eighthweight;
                 break;               
             case 'gram':
-                let gramprice = price / gramweight;
+                  gramprice = price / gramweight;
                 break;
             default:
-                let gramprice = 0;
+                  gramprice = 0;
                 break;
         } 
 
