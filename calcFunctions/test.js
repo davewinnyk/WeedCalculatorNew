@@ -84,9 +84,27 @@ if (gramprice <= 0)
          <head>
              <meta charset=\"UTF-8\">
              <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
-             <title>Document</title>
-         </head>
-         <body>
+             <link rel=\"stylesheet\" href=\"./style.css\">
+             <link href=\"https://fonts.googleapis.com/css2?family=Pacifico&family=Sansita+Swashed:wght@300;400;500;900&display=swap\" rel=\"stylesheet\">
+             
+             <title>Weed Calculator - Marijuana Bud Price by Weights</title>
+             </head>
+             <body>
+             <header class=\"header\">
+             <a href=\"./index.html\">
+                 <h1>Mellow's Marijuana Measurement</h1>
+             </a>
+                 <br>
+                 <h3 class=\"subtext\">Get the Price Breakdown by Common Weights of Weed</h3>
+             </header>
+             <form action=\"./.netlify/functions/test\" class=\"input-form\">
+                 <label>Strain Name:<input type=\"text\" name=\"Strain\" class=\"strain\"></label>
+                 <label>Price: $<input type=\"number\" name=\"Price\" class=\"price\"></label>
+                 <label>Weight:<input type=\"text\" name=\"Weight\" class=\"weight\"></label>
+                 <button class=\"button\" type=\"submit\" id=\"function\">Run Function</button>
+             </form>
+             </a>
+             <br>
              <h1>${strainphrase}</h1>
              <br>
              <p>${poundphrase} ${quapphrase} ${ouncephrase} ${halfphrase} ${quapphrase} ${quarterphrase} ${eighthphrase} ${gramphrase}</p>
