@@ -1,16 +1,15 @@
 exports.handler = function(event, context, callback) {
-    const { weight } = JSON.parse(event.body)
-
-    if (weight === "Ounce")
-    {
+    const { path } = JSON.parse(event.path)
     callback(null, {
         statusCode: 200,
-        body: JSON.stringify({msg: 'An ${weight} is 28grams, bro'}),
+        body: JSON.stringify(path),
         })
     }
+    /*
     else 
     {
         callback(new Error("I don't get that bro!"))
     }
     
 }
+*/
