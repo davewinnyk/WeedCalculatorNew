@@ -1,6 +1,6 @@
 exports.handler = async (event, context) => {
     //add input from website to variables 
-    const strain = event.queryStringParameters.Strain || "Random Word";
+    const strain = event.queryStringParameters.Strain || "Random Strain";
     const price = event.queryStringParameters.Price || "No Price, Bro?";
     const weight = event.queryStringParameters.Weight|| "No Weight, Bro?";
     //add standard weights as variables 
@@ -16,7 +16,7 @@ exports.handler = async (event, context) => {
     //sets gramprice to 0
     let gramprice = 0; 
 
-    //calculates gramprice based on weight and price 
+    //calculates gramprice based on valid weight and price 
     switch (weight) {
         case 'pound':
               gramprice = price / poundweight;
@@ -49,14 +49,37 @@ exports.handler = async (event, context) => {
                 gramprice = 0;
             break;    
     }
-
-
-
-
-
- //SUCCESS 
+//FAILURE
+if (gramprice <= 0)
+{
     return {
-    statusCode: 200,
-    body: `Damn, your ${strain} is ${price} per ${weight} and ${gramprice} per gram, bro!`
-  };
+        statusCode: 400,
+        body: `Something's wrong here, bro! Check yourself.`
+      };
+}
+ //SUCCESS 
+ else
+ {
+     //Get Prices
+     let eighthprice = gramprice*eighthweight;
+     let quarterprice = gramprice*quarterweight;
+     let halfprice = gramprice*halfweight;
+     let ounceprice = gramprice*ounceweight;
+     let quapprice = gramprice*quapweight;
+     let poundprice = gramprice*poundweight;
+     //Get Phrases
+    let strainphrase =`${strain}`;
+    let poundphrase = `It's ${poundprice} per pound`;
+    let quapphrase = `It's ${quapprice} per quap`;
+    let ouncephrase = `It's ${ounceprice} per ounce`;
+    let halfphrase = `It's ${halfprice} per half`;
+    let quarterphrase = `It's ${quarterprice} per quarter`;
+    let eighthphrase = `It's ${eighthprice} per eighth`;
+    let gramphrase = `It's ${gramprice} per gram`;
+
+     return {
+         statusCode: 200,
+         body: `${poundphrase} ${quapphrase} ${ouncephrase} ${halfphrase} ${quapphrase} ${quarterphrase} ${eighthphrase} ${gramphrase}`
+       };
+ }
   };
