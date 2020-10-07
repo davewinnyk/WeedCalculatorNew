@@ -9,9 +9,14 @@ exports.handler = async (event, context) => {
     const quarterweight = 7.087375;
     const eighthweight = 3.5436875;
     const gramweight = 1.0;
-  
+    const Weightlist = ['pound','quap','ounce','half', 'quarter', 'eighth', 'gram'];
+  if (Weightlist.includes(weight) == true){    
     return {
-      statusCode: 200,
-      body: `Wow ${strain} ${price} ${weight} ${halfweight}`
-    };
+    statusCode: 200,
+    body: `Wow ${strain} ${price} ${weight} ${halfweight}`
+  };}
+  else {
+    statusCode: 400,
+    body: `Wow ${weight} is not valid. It's gotta be ${Weightlist}`
+  }
   };
