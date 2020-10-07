@@ -1,5 +1,4 @@
 exports.handler = function(event, context, callback) {
-    console.log("it's cool")
     const poundweight = 453.592;
     const quapweight = 113.398;
     const ounceweight = 28.3495;
