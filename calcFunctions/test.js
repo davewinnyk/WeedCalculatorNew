@@ -1,8 +1,9 @@
 exports.handler = function(event, context, callback) {
-    const { path } = JSON
+    let strain = document.getElementsByName('Strain').value;
+    console.log(strain.value)
     callback(null, {
         statusCode: 200,
-        body: JSON.stringify(),
+        body: strain.value
         })
     }
     /*
