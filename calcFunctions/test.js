@@ -21,6 +21,30 @@ exports.handler = async (event, context) => {
         case 'pound':
               gramprice = price / poundweight;
             break;
+            case 'quap':
+                gramprice = price / quapweight;
+                console.log(gramprice)
+              break;
+          case 'ounce':
+                gramprice = price / ounceweight;
+                console.log(gramprice)
+              break;
+          case 'half':
+                gramprice = price / halfweight;
+                console.log(gramprice)
+              break;
+          case 'quarter':
+                gramprice = price / quarterweight;
+                console.log(gramprice)
+              break;
+          case 'eighth':
+                gramprice = price / eighthweight;
+                console.log(gramprice)
+              break;               
+          case 'gram':
+                gramprice = price / gramweight;
+                console.log(gramprice)
+              break;
         default:
                 gramprice = 0;
             break;    
