@@ -16,13 +16,12 @@
         <br>
         <h3 class="subtext">Get the Price Breakdown by Common Weights of Weed</h3>
     </header>
-    <form class="input-form">
+    <form action="./.netlify/functions/test" class="input-form">
         <label>Strain Name:<input type="text" name="Strain" class="strain"></label>
         <label>Price: $<input type="number" name="Price" class="price"></label>
         <label>Weight:<input type="text" name="Weight" class="weight"></label>
+        <button class="button" type="submit" id="function">Run Function</button>
     </form>
-   <a href="./.netlify/functions/test">
-        <button class="button" id="function">Run Function</button>
     </a>
 </body>
 </html>
