@@ -1,5 +1,5 @@
 exports.handler = function(event, context, callback) {
-    const { path } = JSON.parse(event)
+    const { path } = JSON
     callback(null, {
         statusCode: 200,
         body: JSON.stringify(path),
