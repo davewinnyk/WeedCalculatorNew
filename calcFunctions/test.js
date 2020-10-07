@@ -1,7 +1,9 @@
 exports.handler = async (event, context) => {
+    //add input from website to variables 
     const strain = event.queryStringParameters.Strain || "Random Word";
     const price = event.queryStringParameters.Price || "No Price, Bro?";
     const weight = event.queryStringParameters.Weight|| "No Weight, Bro?";
+    //add standard weights as variables 
     const poundweight = 453.592;
     const quapweight = 113.398;
     const ounceweight = 28.3495;
@@ -9,8 +11,12 @@ exports.handler = async (event, context) => {
     const quarterweight = 7.087375;
     const eighthweight = 3.5436875;
     const gramweight = 1.0;
-    const Weightlist = ['pound','quap','ounce','half', 'quarter', 'eighth', 'gram'];
+    //for weight validation of necessary - const Weightlist = ['pound','quap','ounce','half', 'quarter', 'eighth', 'gram'];
+
+    //sets gramprice to 0
     let gramprice = 0; 
+
+    //calculates gramprice based on weight and price 
     switch (weight) {
         case 'pound':
               gramprice = price / poundweight;
@@ -19,16 +25,14 @@ exports.handler = async (event, context) => {
                 gramprice = 0;
             break;    
     }
-  //if (Weightlist.includes(weight) == true){    
+
+
+
+
+
+ //SUCCESS 
     return {
     statusCode: 200,
-    body: `Wow ${strain} ${price} ${weight} ${halfweight} ${Weightlist} ${gramprice}`
+    body: `Damn, your ${strain} is ${price} per ${weight} and ${gramprice} per gram, bro!`
   };
-/*}
-  
-  else {
-    statusCode: 400,
-    body: `Wow ${weight} is not valid. It's gotta be ${Weightlist}`
-  }
-  */
   };
