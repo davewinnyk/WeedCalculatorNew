@@ -10,13 +10,27 @@ exports.handler = async (event, context) => {
     const eighthweight = 3.5436875;
     const gramweight = 1.0;
     const Weightlist = ['pound','quap','ounce','half', 'quarter', 'eighth', 'gram'];
-  if (Weightlist.includes(weight) == true){    
+    let gramprice = 0; 
+    switch (weight) {
+        case 'pound':
+              gramprice = price / poundweight;
+              console.log(gramprice)
+            break;
+        default:
+                gramprice = 0;
+                console.log(gramprice)
+            break;    
+    }
+  //if (Weightlist.includes(weight) == true){    
     return {
     statusCode: 200,
-    body: `Wow ${strain} ${price} ${weight} ${halfweight}`
-  };}
+    body: `Wow ${strain} ${price} ${weight} ${halfweight} ${Weightlist}`
+  };
+/*}
+  
   else {
     statusCode: 400,
     body: `Wow ${weight} is not valid. It's gotta be ${Weightlist}`
   }
+  */
   };
