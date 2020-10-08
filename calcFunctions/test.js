@@ -120,7 +120,7 @@ if (gramprice <= 0)
                  <option value=\"gram\">Gram</option>
                  </select>
              </select></label>
-                 <button class=\"button\" type=\"submit\" id=\"function\">Run Function</button>
+                 <button class=\"button\" type=\"submit\" id=\"function\">Get Another Breakdown</button>
              </form>
              </a>
              <br>
@@ -129,7 +129,7 @@ if (gramprice <= 0)
              <br>
              <h3>${poundphrase} <br> ${halfpoundphrase} <br> ${quapphrase} <br> ${ouncephrase} <br>${halfphrase}<br> ${quapphrase}<br> ${quarterphrase}<br> ${eighthphrase}<br> ${gramphrase}</h3><br>
              <br>
-             <h3> ${pricephrase}
+             <h2> ${pricephrase} </h2>
          </div>
              </body>
          </html>`
