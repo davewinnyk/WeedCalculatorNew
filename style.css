@@ -11,6 +11,7 @@ body {
     text-align: center;
     justify-content: center;
     background-image: radial-gradient(circle, #3A8F36, #41DB39);
+    padding-top: 10vh;
 }
 header {
     font-family: 'Pacifico', cursive;

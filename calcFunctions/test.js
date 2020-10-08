@@ -67,15 +67,17 @@ if (gramprice <= 0)
      let ounceprice = gramprice*ounceweight;
      let quapprice = gramprice*quapweight;
      let poundprice = gramprice*poundweight;
+     let halfpoundprice = poundprice/2;
      //Get Phrases
     let strainphrase =`${strain}`;
-    let poundphrase = `It's ${poundprice} per pound`;
-    let quapphrase = `It's ${quapprice} per quap`;
-    let ouncephrase = `It's ${ounceprice} per ounce`;
-    let halfphrase = `It's ${halfprice} per half`;
-    let quarterphrase = `It's ${quarterprice} per quarter`;
-    let eighthphrase = `It's ${eighthprice} per eighth`;
-    let gramphrase = `It's ${gramprice} per gram`;
+    let poundphrase = `$${poundprice} per Pound`;
+    let halfpoundphrase = `$${halfpoundprice} per Half Pound`;
+    let quapphrase = `$${quapprice} per Quap`;
+    let ouncephrase = `$${ounceprice} per Ounce`;
+    let halfphrase = `$${halfprice} per Half Ounce`;
+    let quarterphrase = `$${quarterprice} per Quarter`;
+    let eighthphrase = `Is $${eighthprice} per Eighth`;
+    let gramphrase = `It'$${gramprice} per Gram`;
 
      return {
          statusCode: 200,
@@ -116,7 +118,7 @@ if (gramprice <= 0)
              <br>
              <h1>${strainphrase}</h1>
              <br>
-             <h3>${poundphrase} <br> ${quapphrase} <br> ${ouncephrase} <br>${halfphrase}<br> ${quapphrase}<br> ${quarterphrase}<br> ${eighthphrase}<br> ${gramphrase}</h3><br>
+             <h3>${poundphrase} <br> ${halfpoundphrase} <br> ${quapphrase} <br> ${ouncephrase} <br>${halfphrase}<br> ${quapphrase}<br> ${quarterphrase}<br> ${eighthphrase}<br> ${gramphrase}</h3><br>
          </body>
          </html>`
          
