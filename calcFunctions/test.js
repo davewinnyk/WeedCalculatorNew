@@ -116,7 +116,7 @@ if (gramprice <= 0)
              <br>
              <h1>${strainphrase}</h1>
              <br>
-             <p>${poundphrase} ${quapphrase} ${ouncephrase} ${halfphrase} ${quapphrase} ${quarterphrase} ${eighthphrase} ${gramphrase}</p>
+             <h3>${poundphrase} <br> ${quapphrase} <br> ${ouncephrase} <br>${halfphrase}<br> ${quapphrase}<br> ${quarterphrase}<br> ${eighthphrase}<br> ${gramphrase}</h3><br>
          </body>
          </html>`
          
