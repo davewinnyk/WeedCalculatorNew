@@ -11,12 +11,17 @@ body {
     text-align: center;
     justify-content: center;
     background-image: radial-gradient(circle, #3A8F36, #41DB39);
+    font-family: 'Sansita Swashed', cursive;
 }
 form {
     padding-top: 10vh;
+    font-size: 14 px;
+    text-shadow: 1px 1px 3px #3A8F36;
 }
 .results {
-padding: 0.5rem;
+padding: 0.7rem;
+text-shadow: 1px 1px 3px #3A8F36;
+font-family: 'Sansita Swashed', cursive;
 }
 header {
     font-family: 'Pacifico', cursive;

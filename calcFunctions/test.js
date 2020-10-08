@@ -54,7 +54,7 @@ if (gramprice <= 0)
 {
     return {
         statusCode: 400,
-        body: `Something's wrong here, bro! Check yourself.`
+        body: `Something's wrong here, bro! Check yourself. o_O`
       };
 }
  //SUCCESS 
@@ -81,7 +81,7 @@ if (gramprice <= 0)
     
     let pricephrase = `That's some standard priced bud, bro -___-`;
 
-    if (gramprice <= 9) {pricephrase = `That's some cheap bud, bro o_O `};
+    if (gramprice <= 9) {pricephrase = `That's some cheap bud, bro ^_^ `};
     if (gramprice >= 12) {pricephrase = `That's some pricey bud, bro >_< `};
 
      return {
