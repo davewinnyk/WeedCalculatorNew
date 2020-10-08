@@ -84,23 +84,32 @@ if (gramprice <= 0)
          <head>
              <meta charset=\"UTF-8\">
              <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
-             <link rel=\"stylesheet\" href=\"./style.css\">
+             <link rel=\"stylesheet\" href=\"https://kind-wescoff-3b20b6.netlify.app/style.css\">
              <link href=\"https://fonts.googleapis.com/css2?family=Pacifico&family=Sansita+Swashed:wght@300;400;500;900&display=swap\" rel=\"stylesheet\">
              
              <title>Weed Calculator - Marijuana Bud Price by Weights</title>
              </head>
              <body>
              <header class=\"header\">
-             <a href=\"./index.html\">
+             <a href=\"https://kind-wescoff-3b20b6.netlify.app/index.html\">
                  <h1>Mellow's Marijuana Measurement</h1>
              </a>
                  <br>
                  <h3 class=\"subtext\">Get the Price Breakdown by Common Weights of Weed</h3>
              </header>
-             <form action=\"./.netlify/functions/test\" class=\"input-form\">
+             <form action=\"https://kind-wescoff-3b20b6.netlify.app/.netlify/functions/test\" class=\"input-form\">
                  <label>Strain Name:<input type=\"text\" name=\"Strain\" class=\"strain\"></label>
                  <label>Price: $<input type=\"number\" name=\"Price\" class=\"price\"></label>
-                 <label>Weight:<input type=\"text\" name=\"Weight\" class=\"weight\"></label>
+                 <label>Weight:<select name=\"Weight\" class=\"weight\">
+                 <option value=\"pound\">Pound</option>
+                 <option value=\"quap\">Quap</option>
+                 <option value=\"ounce\">Ounce</option>
+                 <option value=\"half\">Half Ounce</option>
+                 <option value=\"quarter\">Quarter</option>
+                 <option value=\"eighth\">Eighth</option>
+                 <option value=\"gram\">Gram</option>
+                 </select>
+             </select></label>
                  <button class=\"button\" type=\"submit\" id=\"function\">Run Function</button>
              </form>
              </a>

@@ -19,7 +19,17 @@
     <form action="./.netlify/functions/test" class="input-form">
         <label>Strain Name:<input type="text" name="Strain" class="strain"></label>
         <label>Price: $<input type="number" name="Price" class="price"></label>
-        <label>Weight:<input type="text" name="Weight" class="weight"></label>
+        <!--<input type="text" name="Weight" class="weight">-->
+        <label>Weight:<select name="Weight" class="weight">
+            <option value="pound">Pound</option>
+            <option value="quap">Quap</option>
+            <option value="ounce">Ounce</option>
+            <option value="half">Half Ounce</option>
+            <option value="quarter">Quarter</option>
+            <option value="eighth">Eighth</option>
+            <option value="gram">Gram</option>
+            </select>
+        </select></label>
         <button class="button" type="submit" id="function">Run Function</button>
     </form>
     </a>
