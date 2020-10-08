@@ -93,21 +93,21 @@ if (gramprice <= 0)
              <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
              <link rel="icon" 
              type="image/png" 
-             href="https://kind-wescoff-3b20b6.netlify.app/WeedCalculatorLogo.PNG">
-             <link rel=\"stylesheet\" href=\"https://kind-wescoff-3b20b6.netlify.app/style.css\">
+             href="https://freeweedcalculator.com/WeedCalculatorLogo.PNG">
+             <link rel=\"stylesheet\" href=\"https://freeweedcalculator.com/style.css\">
              <link href=\"https://fonts.googleapis.com/css2?family=Pacifico&family=Sansita+Swashed:wght@300;400;500;900&display=swap\" rel=\"stylesheet\">
              
              <title>Weed Calculator - Marijuana Bud Price by Weights</title>
              </head>
              <body>
              <header class=\"header\">
-             <a href=\"https://kind-wescoff-3b20b6.netlify.app/index.html\">
+             <a href=\"https://freeweedcalculator.com/index.html\">
                  <h1>Mellow's Marijuana Measurement</h1>
              </a>
                  <br>
                  <h3 class=\"subtext\">Get the Price Breakdown by Common Weights of Weed</h3>
              </header>
-             <form action=\"https://kind-wescoff-3b20b6.netlify.app/.netlify/functions/calc\" class=\"input-form\">
+             <form action=\"https://freeweedcalculator.com/.netlify/functions/calc\" class=\"input-form\">
                  <label>Strain Name:<input type=\"text\" name=\"Strain\" class=\"strain\"></label>
                  <label>Price: $<input type=\"number\" name=\"Price\" class=\"price\"></label>
                  <label>Weight:<select name=\"Weight\" class=\"weight\">
