@@ -11,7 +11,12 @@ body {
     text-align: center;
     justify-content: center;
     background-image: radial-gradient(circle, #3A8F36, #41DB39);
+}
+form {
     padding-top: 10vh;
+}
+.results {
+padding: 0.5rem;
 }
 header {
     font-family: 'Pacifico', cursive;

@@ -76,8 +76,8 @@ if (gramprice <= 0)
     let ouncephrase = `$${ounceprice} per Ounce`;
     let halfphrase = `$${halfprice} per Half Ounce`;
     let quarterphrase = `$${quarterprice} per Quarter`;
-    let eighthphrase = `Is $${eighthprice} per Eighth`;
-    let gramphrase = `It'$${gramprice} per Gram`;
+    let eighthphrase = `$${eighthprice} per Eighth`;
+    let gramphrase = `$${gramprice} per Gram`;
 
      return {
          statusCode: 200,
@@ -86,6 +86,9 @@ if (gramprice <= 0)
          <head>
              <meta charset=\"UTF-8\">
              <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+             <link rel="icon" 
+             type="image/png" 
+             href="https://kind-wescoff-3b20b6.netlify.app/WeedCalculatorLogo.PNG">
              <link rel=\"stylesheet\" href=\"https://kind-wescoff-3b20b6.netlify.app/style.css\">
              <link href=\"https://fonts.googleapis.com/css2?family=Pacifico&family=Sansita+Swashed:wght@300;400;500;900&display=swap\" rel=\"stylesheet\">
              
@@ -116,10 +119,12 @@ if (gramprice <= 0)
              </form>
              </a>
              <br>
+             <div class=\"results\">
              <h1>${strainphrase}</h1>
              <br>
              <h3>${poundphrase} <br> ${halfpoundphrase} <br> ${quapphrase} <br> ${ouncephrase} <br>${halfphrase}<br> ${quapphrase}<br> ${quarterphrase}<br> ${eighthphrase}<br> ${gramphrase}</h3><br>
-         </body>
+         </div>
+             </body>
          </html>`
          
          //body: `${poundphrase} ${quapphrase} ${ouncephrase} ${halfphrase} ${quapphrase} ${quarterphrase} ${eighthphrase} ${gramphrase}`
