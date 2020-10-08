@@ -78,6 +78,11 @@ if (gramprice <= 0)
     let quarterphrase = `$${quarterprice} per Quarter`;
     let eighthphrase = `$${eighthprice} per Eighth`;
     let gramphrase = `$${gramprice} per Gram`;
+    
+    let pricephrase = `That's some standard priced bud, bro -___-`;
+
+    if (gramprice <= 9) {pricephrase = `That's some cheap bud, bro o_O `};
+    if (gramprice >= 12) {pricephrase = `That's some pricey bud, bro >_< `};
 
      return {
          statusCode: 200,
@@ -123,6 +128,8 @@ if (gramprice <= 0)
              <h1>${strainphrase}</h1>
              <br>
              <h3>${poundphrase} <br> ${halfpoundphrase} <br> ${quapphrase} <br> ${ouncephrase} <br>${halfphrase}<br> ${quapphrase}<br> ${quarterphrase}<br> ${eighthphrase}<br> ${gramphrase}</h3><br>
+             <br>
+             <h3> ${pricephrase}
          </div>
              </body>
          </html>`
