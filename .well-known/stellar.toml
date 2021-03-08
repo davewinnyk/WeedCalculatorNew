@@ -41,7 +41,7 @@ issuer="GAASD6MEPCGI6J7HUZR7PKYN3V54P7ODIHDNRNCDQURCRDBTZ5AQYIJP"
 is_asset_anchored=false
 display_decimals=2
 name="The Toke Token"
-desc="Buy TOKEs to trade with your buds for smoke sessions. 1 TOKE = 1 SMOKE. The recipient sets the terms of the sesh and provides the herb."
+desc="Buy TOKEs to trade with your buds for smoke sessions. 1 TOKE = 1 SMOKE. The recipient sets the terms of the sesh and provides the herb. This asset is meant to mirror the cost of smoke session compared to the USD$ and average prices nationwide."
 redemption_instructions="This asset represents a smart contract where one (1) TOKE can be traded for one (1) smoke session as defined by the recipient of the token." 
 conditions="The initial purchase of the token does not give the barrer a right to a session from the distribution account. Once purchased, it can be traded with anyone for a smoke session."
 image="http://freeweedcalculator.com/TOKELOGO.PNG"
