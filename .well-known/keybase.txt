@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/davewinnyk
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://freeweedcalculator.com
+  * I am davewinnyk (https://keybase.io/davewinnyk) on keybase.
+  * I have a public key with fingerprint F467 206D BE95 5298 8E88  62FB EBEB 2F97 F32E 0D1D
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120712536802c3f9f3c45b1a74655c1c3a6b6d380ad515a96176fb3aea9282245b90a",
+      "fingerprint": "f467206dbe9552988e8862fbebeb2f97f32e0d1d",
+      "host": "keybase.io",
+      "key_id": "ebeb2f97f32e0d1d",
+      "kid": "010136c0a0166fb73efdf3f29c665e0082f07093ec064934bb1db2b5c5759f1e86f10a",
+      "uid": "b4f82ad06b1bbecdc8bc4e4717c3da19",
+      "username": "davewinnyk"
+    },
+    "service": {
+      "hostname": "freeweedcalculator.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1615187004,
+  "expire_in": 157680000,
+  "prev": "f9c8d5cd4201ea87fc02dd813d7e6571fd2c5b84f390710e790d5308d6a53678",
+  "seqno": 18,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMOAAnicbVJrTBxVGF0qBcE0aWmJIi6t0/KnLDCPnddK8VEQtfijaWpBqNuZuXfY
+gWVm3Z1doJQuFKRiBIuUR0Mw5ZEakSIUqkBDFW1pGiDlUYoPNoUGo4aCiBC1EuoM
+af9574+b++Wcc8/33XNtyxOGYL/5+djaP2O2GP2GBlrchmOJw3H5CK+APMSSj2TB
+jQPaAXSp1iwJIBYExXCUxnCSoBgUFwiRFQnBTPIYR5spkhQwgeAongIEg3KAxEiO
+pTCaEnmCgxyLMziuYVmUQ0yIKMkZ0OlwSrKqyYpmisZRCvCQJUmcZRjIMBQu8lDb
+uMjSIoFDFGBAI9oUl87QzPGcC8ZIilbTLtYNe/+Df+wbxQhKQDkUozQ/NAFFIBIi
+zgoURUIUZXARpVGWgAJKmVnCzPMY4HGeFEiaZEUMMpSIbfh2b8jxZpHBOYBSPMbz
+UAACwwtmaKYxWiAAh7E60AWdMpcNNTTgPDBHkuW8LKTAhGh1jyRAfbR6L48wohPC
+HAiBwNkFt51TFWeMoGRrOg6noiqCYtcwNlV1uCy6hprn0Ek5kLc+krPykgy0mWoM
+D3S6JEVGLJiGFFRJ18cojMQYGkXNJgTmOiQntEo6gqS1j9SW/g706D5YgQGkAMw4
+ikGOoUUBxQFgMALQkCJpTAS4QPKMWSRYLQgopFkUkATKAIrTQkEziN7gu7KiaTOa
+Ty5D03RJGTKnup0QKfh2IN3f4BdsCNi8SQ+bITho6+MITlVtNZxtjpkPbrs3eLV4
+ZIRZMFyoyUuudT+96/6r1b3x7+364ZO66I+GZuvm8HXv8uBrow++M2LdE5ZTxwNX
++w5GHvb0rok7E4jo1sSZ+MJ1nP7mWHLp3IumtIrYg014ie9W0p7fCnrKiieqTl6n
+11bdsOPh4I3hPzpLLoVmRG6qHv3C3BhvzL3T4e1tf7K6PC/tdJtpqt1ze1vqmR0p
+t6b2r4V/4L9vt+2dqZjw1Hpvb0N61zSa0yqdf/nA+x8fet47PhQ0Wrj3YaQ3KKh2
+3G/Y3lWnRhoX+YRTjqXpD0P7T0x2qfbFH4siJp+qu3i7z3G9cKC8u7Qp6RnvbNfe
+qp6ozIQQ39IOz5ycmF0flvzP0QH/9Bfab/Z0pZ39+aoyH3AnkTnTFrCtPOJ17O3E
+lMWKk/lJE6r1pyt/H+l7c89s/xH3uPxc0bPLxb7omdyxsVQQTgyWwQLa3dDZMlrZ
+H/LGpGl77F82768NsdZz//oVNV6sPjxS/nuK3FR7t6TDs1oT1DxV2RMe4rr8YLV6
+ct0Yeq6mI6oz6sr3+95asX2+dH7OG5a0cKmy4L7t61DrL77VpIiFnZ0zlqaezPrd
+y77SwB7+pQOhXx46XUPxdZ9OjrVUtF7e3PiVZXtf7t2SayNhxhsn5GznTfvK8bLu
+wel+XzOcKbSyVPKFMmV/4HDvZ0dXXom7Jy3FRWT+B5JB0dw=
+=+TbP
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/davewinnyk
+
+==================================================================

@@ -1,0 +1,48 @@
+
+ACCOUNTS=[
+"GAASD6MEPCGI6J7HUZR7PKYN3V54P7ODIHDNRNCDQURCRDBTZ5AQYIJP",
+"GBBCZFSYPTQPCYP7ZAHR3JTATOND5CGS7ENRAGGQSVN33UOQN42EFQQO",
+"GBIBV7VU4KNE6PQS5M3JG5VGOREL7JXILTTWWYIXC62GKUSXLY4IGGKE"
+
+
+]
+VERSION="2.0.0"
+
+[DOCUMENTATION]
+ORG_NAME="Free Weed Calculator"
+ORG_DBA=""
+ORG_URL="http://freeweedcalculator.com/"
+ORG_LOGO="http://freeweedcalculator.com/TOKELOGO.PNG"
+ORG_DESCRIPTION="Free Weed Calculator has issued these tokens to give you the oppurtunity to toke with him and your friends."
+ORG_PHYSICAL_ADDRESS="Lakeview, Chicago IL, 60657"
+ORG_PHYSICAL_ADDRESS_ATTESTATION=""
+ORG_PHONE_NUMBER="1 (234) 562-2133"
+ORG_PHONE_NUMBER_ATTESTATION=""
+ORG_KEYBASE="davewinnyk"
+ORG_TWITTER="fakedavewinnyk"
+ORG_GITHUB="davewinnyk"
+ORG_OFFICIAL_EMAIL="davewinnyk@gmail.com"
+
+[[PRINCIPALS]]
+name="David Bryan Winnyk"
+email="davewinnyk@gmail.com"
+keybase="davewinnyk"
+twitter="fakedavewinnyk"
+github="davewinnyk"
+id_photo_hash=""
+verification_photo_hash=""
+
+
+# asset with meta info
+[[CURRENCIES]]
+code="TOKE"
+issuer="GAASD6MEPCGI6J7HUZR7PKYN3V54P7ODIHDNRNCDQURCRDBTZ5AQYIJP"
+is_asset_anchored=false
+display_decimals=2
+name="The Toke Token"
+desc="Buy TOKEs to trade with your buds for smoke sessions. 1 TOKE = 1 SMOKE. The recipient sets the terms of the sesh and provides the herb."
+redemption_instructions="This asset represents a smart contract where one (1) TOKE can be traded for one (1) smoke session as defined by the recipient of the token." 
+conditions="The initial purchase of the token does not give the barrer a right to a session from the distribution account. Once purchased, it can be traded with anyone for a smoke session."
+image="http://freeweedcalculator.com/TOKELOGO.PNG"
+
+
