@@ -86,43 +86,62 @@ if (gramprice <= 0)
 
      return {
          statusCode: 200,
-         body: `<!DOCTYPE html>
-         <html lang=\"en\">
-         <head>
-             <meta charset=\"UTF-8\">
-             <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
-             <link rel="icon" 
-             type="image/png" 
-             href="https://kind-wescoff-3b20b6.netlify.app/WeedCalculatorLogo.PNG">
-             <link rel=\"stylesheet\" href=\"https://kind-wescoff-3b20b6.netlify.app/style.css\">
-             <link href=\"https://fonts.googleapis.com/css2?family=Pacifico&family=Sansita+Swashed:wght@300;400;500;900&display=swap\" rel=\"stylesheet\">
-             
-             <title>Weed Calculator - Marijuana Bud Price by Weights</title>
-             </head>
-             <body>
-             <header class=\"header\">
-             <a href=\"https://kind-wescoff-3b20b6.netlify.app/index.html\">
-                 <h1>Mellow's Marijuana Measurement</h1>
-             </a>
-                 <br>
-                 <h3 class=\"subtext\">Get the Price Breakdown by Common Weights of Weed</h3>
-             </header>
-             <form action=\"https://kind-wescoff-3b20b6.netlify.app/.netlify/functions/test\" class=\"input-form\">
-                 <label>Strain Name:<input type=\"text\" name=\"Strain\" class=\"strain\"></label>
-                 <label>Price: $<input type=\"number\" name=\"Price\" class=\"price\"></label>
-                 <label>Weight:<select name=\"Weight\" class=\"weight\">
-                 <option value=\"pound\">Pound</option>
-                 <option value=\"quap\">Quap</option>
-                 <option value=\"ounce\">Ounce</option>
-                 <option value=\"half\">Half Ounce</option>
-                 <option value=\"quarter\">Quarter</option>
-                 <option value=\"eighth\">Eighth</option>
-                 <option value=\"gram\">Gram</option>
-                 </select>
-             </select></label>
-                 <button class=\"button\" type=\"submit\" id=\"function\">Get Another Breakdown</button>
-             </form>
-             </a>
+         body: `
+         <!DOCTYPE html>
+       <html lang="en">
+       <head>
+           <meta charset="UTF-8">
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <meta http-equiv="X-UA-Compatible" content="IE=edge">
+           <meta name="description" content="">
+           <!--<link rel="stylesheet" href="./style.css">-->
+           <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+           <link rel="preconnect" href="https://fonts.gstatic.com">
+       <link href="https://fonts.googleapis.com/css2?family=Ubuntu" rel="stylesheet">
+           <link rel="icon" 
+           type="image/png" 
+           href="./WeedCalculatorLogo.PNG">
+           <title>Weed Calculator - Marijuana Bud Price by Weights</title>
+           <style>
+               body, h1, h2, h3, h4, h5, h6 {font-family: "Ubuntu"}
+           </style>
+       </head>
+       <header class="header">
+           <div class="w3-container w3-center w3-theme-l4">
+       <a href="./index.html">
+           <h1><b>Weed Calculator</b></h1>
+       </a>
+           <h3 class="subtext">Get the Price Breakdown by Common Weights of Weed</h3>
+       </div>
+       </header>
+       <body>
+           <div class="w3-container w3-center w3-padding-large w3-green">
+           <form action="./.netlify/functions/calc" class="input-form">
+               <!--Navigation Bar-->
+               <div class="w3-bar w3-section w3-theme">
+                   <a href="/index.html" class="w3-bar-item w3-button w3-green">Home</a>
+                   <a href="/TOKE.html" class="w3-bar-item w3-button">TOKE Tokens</a>
+       
+                 </div>
+                 <!--Begin Body--></form>
+                 <div class="w3-panel w3-theme">
+               <h3><label><b>Strain Name: </b> </h3> <p><input type="text" name="Strain" class="strain" autocomplete="off"></label></p>
+               <h3><label><b>Price: $ </b> </h3> <p><input type="number" name="Price" class="price" autocomplete="off"></label></p>
+               <!--<input type="text" name="Weight" class="weight">-->
+              <h3> <label><b>Weight: </b> </h3> <p><select name="Weight" class="weight"></p>
+                   <option value="pound">Pound</option>
+                   <option value="quap">Quap</option>
+                   <option value="ounce">Ounce</option>
+                   <option value="half">Half Ounce</option>
+                   <option value="quarter">Quarter</option>
+                   <option value="eighth">Eighth</option>
+                   <option value="gram">Gram</option>
+                   </select>
+               </select></label>
+               <p><button class="button" type="submit" id="function">Get the Price Breakdown</button></p>
+           </form>
+           </a>
+       </div>
              <br>
              <div class=\"results\">
              <h1>${strainphrase}</h1>
@@ -138,3 +157,8 @@ if (gramprice <= 0)
        };
  }
   };
+
+
+
+
+
