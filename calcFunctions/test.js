@@ -121,7 +121,7 @@ if (gramprice <= 0)
                <div class="w3-bar w3-section w3-theme">
                    <a href="/index.html" class="w3-bar-item w3-button w3-green">Home</a>
                    <a href="/TOKE.html" class="w3-bar-item w3-button">TOKE Tokens</a>
-       
+                   <a href="/TOKEupdates.html" class="w3-bar-item w3-button">TOKE Updates</a>
                  </div>
                  <!--Begin Body--></form>
                  <div class="w3-panel w3-theme">
