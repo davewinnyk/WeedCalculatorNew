@@ -36,8 +36,8 @@ verification_photo_hash=""
 [[CURRENCIES]]
 code="TOKE"
 issuer="GAASD6MEPCGI6J7HUZR7PKYN3V54P7ODIHDNRNCDQURCRDBTZ5AQYIJP"
-is_asset_anchored=true
-asset_anchor="other"
+is_asset_anchored=false
+asset_anchor=""
 display_decimals=2
 name="The Toke Token"
 desc="TOKE is a crypto for cannabis. Show your love for your buds by sending them a TOKE."
